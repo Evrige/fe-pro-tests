@@ -59,5 +59,9 @@ describe('objectEntries()', () => {
                                 age: 18
     } ))
       .toStrictEqual([["name", "Artur"], ["lastname", "Dudnik"], ["age", 18]]);
+    expect(objectEntries({} ))
+      .toStrictEqual([]);
+    expect(objectEntries({name: "name"} ))
+      .toStrictEqual([["name", "name"]]);
   });
 });
