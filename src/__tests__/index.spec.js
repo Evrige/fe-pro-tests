@@ -21,6 +21,8 @@ describe('sumOfArray()', () => {
   it('sum numbers', function() {
     expect(sumOfArray([34, -34, 15, 6]))
       .toEqual(21);
+    expect(sumOfArray(["hello"]))
+      .toEqual(0);
     expect(sumOfArray([]))
       .toEqual(0);
     expect(sumOfArray([-34]))
@@ -49,6 +51,8 @@ describe('addDotsToString()', () => {
       .toEqual("...");
     expect(addDotsToString("Hello! My name is Artur", 0))
       .toEqual("Hello! My name is Ar...");
+    expect(addDotsToString("Hello! My name is Artur", 100))
+      .toEqual("Hello! My name is Artur");
   });
 });
 
